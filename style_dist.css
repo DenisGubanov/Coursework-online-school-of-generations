@@ -1,0 +1,172 @@
+body {
+	overflow-x:hidden;
+}
+img {
+	width: 150px; 
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.collapse {
+    font-size: 16px;
+}
+.progress-text {
+	margin-left: 10px;
+}
+.progress {
+	width: 80%;
+	height: 3px;
+	margin-left: 10px;
+}
+.form-control {
+	width: 80%;
+}
+.footer_button {
+    width: 170px;
+    margin-left: 10px;
+}
+.progress-bar {
+    width: 35%;
+}
+.nav-link {
+    color: white;
+}
+#fio {
+    position: absolute; 
+    right: 10px; 
+    margin-top: -5px;
+}
+#class {
+    position: absolute; 
+    right: 10px; 
+    margin-top: 20px;
+}
+#button_menu {
+    width: 170px;
+    margin-left: 15px;
+}
+#span_active {
+    position: absolute;
+    right: 10px;
+}
+
+@media (max-width:1200px) { 
+    body {
+    	font-size: 12px;
+        overflow-x:hidden;
+    }
+    .main {
+    	margin-left: -50px;
+    }
+    .progress {
+    width: 170px;
+    height: 3px;
+    margin-left: 10px;
+    }
+}
+
+@media (max-width:995px) {
+    body {
+    	font-size: 10px;
+        overflow-x:hidden;
+    }
+    img {
+    	width: 100px; 
+		margin-top: 20px;
+    }
+    .main {
+    	margin-left: -50px;
+    }
+    .alert {
+    	width: 600px;
+    }
+    .list-group-item {
+    	width: 70%;
+    }
+    .progress {
+    	width: 60%;
+    	height: 3px;
+    }
+    .footer_button {
+        width: 1000%;
+        margin-left: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    body {
+    	font-size: 10px;
+        overflow-x:hidden;
+    }
+    img {
+    	width: 100px; 
+		margin-top: 20px;
+        margin-left: 150%;
+    }
+    .navbar {
+        
+        width: 120%;
+    }
+    .navbar-brand {
+        margin-right: 20%;
+    }
+    .main {
+    	margin-left: -40px;
+    }
+    .alert {
+    	width: 600px;
+    }
+    .list-group-item {
+    	width: 70%;
+    }
+    .progress {
+    	width: 120px;
+    	height: 3px;
+    	margin-left: 10px;
+    }
+    .footer_button {
+    	width: 1000%;
+    	margin-left: 200%;
+    }
+}
+
+@media (max-width:430px) {
+    body {
+        font-size: 16px;
+        overflow-x:hidden;
+    }
+    img {
+        width: 300%; 
+        margin-top: 20px;
+        margin-left: -5%;
+    }
+    .navbar {
+        width: 260%;
+    }
+    .navbar-brand {
+        margin-right: 70%;
+    }
+    .main {
+        margin-left: 20px;
+    }
+    .alert {
+        width: 90%;
+    }
+    .list-group-item {
+        width: 100%;
+    }
+    .progress {
+        width: 120px;
+        height: 10px;
+        margin-left: 10px;
+    }
+    .footer_button {
+        width: 300%;
+        margin-left: -20%;
+        font-size: 12px;
+    }
+    .text-white {
+        font-size: 12px;
+    }
+}
+
+

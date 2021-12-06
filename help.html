@@ -8,10 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style_main.css">
     <link rel="shortcut icon" href="icon.png" type="image/png">
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    
   </head>
   <body>
     <div class="collapse" id="navbarToggleExternalContent">
@@ -26,8 +24,8 @@
         <li class="nav-item">
           <a class="nav-link" href="help.html">Помощь</a>
         </li>
-        <p class="text-white" id="fio">Камушев Василий Анатольевич</p>
-        <p class="text-white" id="class">1 курс. Класса А10.</p>
+        <p class="text-white" style="position: absolute; right: 10px; margin-top: -5px;">Камушев Василий Анатольевич</p>
+        <p class="text-white" style="position: absolute; right: 10px; margin-top: 20px;">1 курс. Класса А10.</p>
       </ul>
       </div>
     </div>
@@ -48,8 +46,8 @@
         <li class="nav-item">
           <a class="nav-link" href="help.html">Помощь</a>
         </li>
-        <p class="text-white" id="fio">Камушев Василий Анатольевич</p>
-        <p class="text-white" id="class">1 курс. Класса А10.</p>
+        <p class="text-white" style="position: absolute; right: 10px; margin-top: -5px;">Камушев Василий Анатольевич</p>
+        <p class="text-white" style="position: absolute; right: 10px; margin-top: 20px;">1 курс. Класса А10.</p>
       </ul>
     </div>
     </div>
@@ -91,45 +89,19 @@
       <button type="button" class="list-group-item list-group-item-action" disabled>Суббота</button>
       <button type="button" class="list-group-item list-group-item-action" disabled>Воскресенье</button>
     </div>
-  </div>
-
+</div>
 <!-- Main -->
 <div class="col-xl-9 col-lg-7 col-md-7 col-sm-7 col-11 main_">
-  <h2>Новости Онлайн школы</h2>
-    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-      <h4 id="list-item-1">Общая информация</h4>
-        <p>Сегодня для детей в школах созданы все условия для качественного, разностороннего образования. Если выпускника конца прошлого столетия пригласить на урок нынешнего 7-ми классника, первый будет очень удивлен – столько современных фишек используется сейчас в образовании. И дистанционное обучение явление-то не новое. Для кого-то – это вынужденная мера (по причинам здоровья), кто-то сам принял такое решение для ребенка. Интернет платформы, обучающие сайты, ролики на ютуб каналах и пр. созданы и внедрены достаточно давно. Современные школьники периодически пользуются ими уже несколько лет. Просто повышенный спрос возник именно сейчас.</p>
-    </div>
-  <div class="slideshow-container">
-    <div class="sl fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="img1.jpg" style="width:100%; border-radius: 30px; ">
-    <div class="text">Удобство и доступность</div>
-  </div>
-
-  <div class="sl fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="img2.jpg" style="width:100%; border-radius: 30px; ">
-    <div class="text">Общение с преподавателями</div>
-  </div>
-
-  <div class="sl fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img3.jpg" style="width:100%; border-radius: 30px; ">
-    <div class="text">Все ваши работы в одном месте</div>
-  </div>
-
-  <a class="prev" onclick="plus(-1)">&#10094;</a>
-  <a class="next" onclick="plus(1)">&#10095;</a>
+  <h2>Помощь пользователем</h2>
+    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example score_">
+      <h4 id="list-item-1">Вы не можете зайти в свой личный кабинет?</h4>
+        <p>Проверьте правильность кода, который вам выдал преподаватель. Проверьте правильность набора логина и пароля.</p>
+  <h4 id="list-item-2">Вам не отвечает преподаватель?</h4>
+  <p>Терпения. Преподаватели всегда отвечают на ваши вопросы в течении определенного времени, если время заданное преподавателем вышло, напишите на почту администрации: schooladmin@mail.ru</p>
+  
 </div>
-<br>
-
-  <div style="text-align:center">
-    <span class="dot" onclick="current(1)"></span>
-    <span class="dot" onclick="current(2)"></span>
-    <span class="dot" onclick="current(3)"></span>
-    </div> 
-  </div>
 </div>
-</body>
+</div>
+
+  </body>
 </html>

@@ -2,25 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello, world!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=endge">
+    <meta name="viewport" content="width=device-width, initial-skale=1.0">
+    <title>Онлайн Школа</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style_main.css">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </head>
-  <body style="overflow-x:hidden;">
-  
-  <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
-    <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">Школа поколений</a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+  <body>
+  <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-primary p-4">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Новости</a>
+          <a class="nav-link bg-primary" href="index.html">Новости</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="dist1.html">Дистанционная школа</a>
@@ -28,8 +24,30 @@
         <li class="nav-item">
           <a class="nav-link" href="help.html">Помощь</a>
         </li>
-        <p class="text-white" style="position: absolute; right: 10px; margin-top: -5px;">Камушев Василий Анатольевич</p>
-        <p class="text-white" style="position: absolute; right: 10px; margin-top: 20px;">1 курс. Класса А10.</p>
+        <p class="text-white" id="fio">Камушев Василий Анатольевич</p>
+        <p class="text-white" id="class">1 курс. Класса А10.</p>
+      </ul>
+      </div>
+    </div>
+  <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
+    <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Школа поколений</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link bg-primary" href="index.html">Новости</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dist1.html">Дистанционная школа</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="help.html">Помощь</a>
+        </li>
+        <p class="text-white" id="fio">Камушев Василий Анатольевич</p>
+        <p class="text-white" id="class">1 курс. Класса А10.</p>
       </ul>
     </div>
     </div>
@@ -37,23 +55,25 @@
 
 <!-- Боковое меню -->
 <div class="row">
-  <div class="col-2">
-    <div class="list-group" style="width: 170px; margin-left: 15px;">
+  <div class="col-xl-2 col-lg-2 col-md-3 col-sm-2 inline_block">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-10 col-7">
+    <div class="list-group" id="button_menu">
 
       <!-- Monday Button -->
-      <button type="button" class="list-group-item list-group-item-action" style="border-radius: 0px;" onclick="document.location='monday.html'">
+      <button type="button" class="list-group-item list-group-item-action " onclick="document.location='monday.html'">
         Понедельник
-        <span class="badge bg-light bg-pill text-primary" style="position: absolute; right: 10px;">14</span>
+        <span class="badge bg-light bg-pill text-primary" id="span_active">14</span>
       </button>
 
       <!-- Tuesday Button -->
       <button type="button" class="list-group-item list-group-item-action active" onclick="document.location='tuesday.html'">
         Вторник
-        <span class="badge bg-light bg-pill text-primary" style="position: absolute; right: 10px;">7</span></a>
+        <span class="badge bg-light bg-pill text-primary" id="span_active">7</span>
       </button>
 
       <!-- Wednesday Button -->
-      <button type="button" class="list-group-item list-group-item-action" onclick="document.location='wednesday.html'">
+      <button type="button" class="list-group-item list-group-item-action " onclick="document.location='wednesday.html'">
         Среда
       </button>
 
@@ -65,57 +85,71 @@
       <!-- Friday Button -->
       <button type="button" class="list-group-item list-group-item-action" onclick="document.location='friday.html'">
         Пятница
-        <span class="badge bg-light bg-pill text-primary" style="position: absolute; right: 10px;">3</span>
+        <span class="badge bg-light bg-pill text-primary" id="span_active">3</span>
       </button>
 
       <button type="button" class="list-group-item list-group-item-action" disabled>Суббота</button>
       <button type="button" class="list-group-item list-group-item-action" disabled>Воскресенье</button>
     </div>
-    <div style="width: 170px; margin-left: 15px;">
-    <div style="height: 10px;"></div>
-      <h7 style="margin-top: 10px;">Курс пройден на 35%</h7>
-    <div style="height: 10px;"></div>
-    <div class="progress" style="height: 3px;">
-      <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-1">
+      <div class="text-center">
+        <img src="teacher2.jpg" class="rounded" alt="...">
+      </div>
+      <div class="col-3 footer_button">
+      <div class="text-center">
+        <h7><b>Афанасьева Анатолия Владимировна</b></h7>
+        <h7>Преподаватель математики и физики</h7>
+      </div>
     </div>
+  </div>
   </div>
 </div>
 
 <!-- Main -->
-<div class="col-6">
-  <div class="container-fluid" style="margin-top: 20px;">
-    <h2>Производная</h2>
-    <p>
-    <h6>Произво́дная функции — понятие дифференциального исчисления, характеризующее скорость изменения функции в данной точке. Определяется как предел отношения приращения функции к приращению её аргумента при стремлении приращения аргумента к нулю, если такой предел существует.</h6></p>
-    <p><h6>В классическом дифференциальном исчислении производная чаще всего определяется через понятие предела, однако исторически теория пределов появилась позже дифференциального исчисления. Исторически производная вводилась кинематически (как скорость) или геометрически (определяясь по сути наклоном касательной, в разных конкретных формулировках). Ньютон называл производную флюксией, обозначая точкой над символом функции, школа Лейбница предпочитала в качестве базового понятия дифференциал[1].
 
-    Русский термин в форме «производная функция» впервые употребил В. И. Висковатов, переведя на русский язык соответствующий французский термин dérivée, используемый французским математиком Лагранжем[2]. </h6></p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Derivative_of_a_function.svg/300px-Derivative_of_a_function.svg.png">
-    <p><h6>Пожалуйста, прочитайте вдумчиво и не слишком быстро – материал прост и доступен каждому! Ничего страшного, если местами что-то покажется не очень понятным, к статье всегда можно вернуться позже. Скажу больше, теорию полезно проштудировать несколько раз, чтобы качественно уяснить все моменты (совет особенно актуален для студентов-«технарей», у которых высшая математика играет значительную роль в учебном процессе).</h6></p>
-  </div>
-  <img src="http://mathprofi.ru/i/opredelenie_proizvodnoi_smysl_proizvodnoi_clip_image081.jpg">
-  <div class="card" style="width: 50%; margin-top: 20px;" >
-  <div class="card-body">
-    <h5 class="card-title">Самостоятельная работа</h5>
-    <p class="card-text">Вы прошли лекцию по производным ДЗ. Пройдите тест.</p>
-    <a href="#" class="btn btn-primary">Пройти</a>
-  </div>
+<div class="col-xl-1 col-lg-2 col-md-2 col-sm-1 col-11">
+<div id="list-example" class="list-group">
+  <a class="list-group-item list-group-item-action" href="#list-item-1">Часть 1</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-2">Часть 2</a>
 </div>
-<div class="mb-3" style="margin-top: 50px;">
-  <label for="exampleFormControlInput1" class="form-label">Почта преподавателя</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="gubanova.s.v@mail.ru">
 </div>
-<div class="mb-3" style="margin-bottom: 50px;">
-  <label for="exampleFormControlTextarea1" class="form-label">Текст сообщения</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-11 main">
+  <h2>Классная работа за Понедельник.</h2>
+  <div class="head-main">
+  <h4 class="badge bg-primary bg-primary text-pill">Информатика</h4>
+  <h7 class="score">Твои оценки за эту работу: </h7>
+  <h4 class="badge bg-success text-pill score">5</h4>
 </div>
-<a href="#" class="btn btn-primary">Отправить</a>
+    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example score_">
+      <h4 id="list-item-1">Что такое Граф</h4>
+        <p>Граф — математическая абстракция реальной системы любой природы, объекты которой обладают парными связями. Граф как математический объект есть совокупность двух множеств — множества самих объектов, называемого множеством вершин, и множества их парных связей, называемого множеством рёбер.</p>
+  <h4 id="list-item-2">Теория графов</h4>
+  <p>Теория графов
+В переводе с греческого граф — «пишу», «описываю». В современном мире граф описывает отношения. И наоборот: любое отношение можно описать в виде графа.
+
+Теория графов — обширный раздел дискретной математики, в котором системно изучают свойства графов.
+
+Теория графов широко применяется в решении экономических и управленческих задач, в программировании, химии, конструировании и изучении электрических цепей, коммуникации, психологии, социологии, лингвистике и в других областях.
+
+Для чего строят графы: чтобы отобразить отношения на множествах. По сути, графы помогают визуально представить всяческие сложные взаимодействия: аэропорты и рейсы между ними, разные отделы в компании, молекулы в веществе.
+
+Давайте на примере.
+
+Пусть множество A = {a1, a2, ... an} — это множество людей, и каждый элемент отображен в виде точки. Множество B = {b1, b2, ... bm} — множество связок (прямых, дуг или отрезков).
+
+На множестве A зададим отношение знакомства между людьми из этого множества. Строим граф из точек и связок. Связки будут связывать пары людей, знакомых между собой.
+
+Число знакомых у одних людей может отличаться от числа знакомых у других людей, некоторые могут вовсе не быть знакомы (такие элементы будут точками, не соединёнными ни с какой другой). Так получился граф <a href="https://skysmart.ru/articles/mathematic/osnovnye-ponyatiya-teorii-grafov">Ссылка на статью</a>
+</p>
+
+</div>
 </div>
 
 <!-- Меню ДЗ -->
-<div class="col-4">
-  <div class="list-group" style="border-radius: 0px;">
-  <a href="#" class="list-group-item list-group-item-action">
+<div class="col-xl-3 col-lg-10 col-md-12 col-sm-12 col-12">
+  <div class="list-group">
+  <a href="friday.html" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Задачи дома от Пети Иванова.</h5>
       <small class="text-muted">1 дней назад</small>
@@ -124,32 +158,14 @@
     <small class="text-muted">Открытый урок математика.</small>
   </a>
 
-  <a href="#" class="list-group-item list-group-item-action">
+  <a href="friday.html" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Задачи из учебника Воробьева.</h5>
       <small class="text-muted">6 дней назад</small>
     </div>
     <p class="mb-1">Задачи, которые задал преподаватель на уроке.</p>
     <small class="text-muted">Математика. Борис Трушин.</small>
-  </a>
-
-  <a href="#" class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Задачи на урок.</h5>
-      <small class="text-muted">10 дней назад</small>
-    </div>
-    <p class="mb-1">Задачи №13, №14, №18, №21</p>
-    <small class="text-muted">Математика. Губанов Денис Дмитриевич.</small>
-  </a>
-
-  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Выучить таблицу производной.</h5>
-      <small>12 дней назад</small>
-    </div>
-    <p class="mb-1">Таблица производной внутри раздела.</p>
-    <small>Математика. Губанова Снежана Васильевна.</small>
-  </a>  
+  </a> 
 </div>
 </div>
   </body>
